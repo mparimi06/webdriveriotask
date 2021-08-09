@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628457314511' stop='1628457325144'>
+    <name>SwagLabs Demo Application</name>
+    <title>SwagLabs Demo Application</title>
+    <test-cases>
+        <test-case start='1628457314511' status='broken' stop='1628457325129'>
+            <name>login successful with standard user</name>
+            <title>login successful with standard user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call setValue on element with selector "#user-name" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "#user-name" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\madhu\Documents\webdriverio\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\madhu\Documents\webdriverio\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\shim.js:103:29)
+                    at swaglabsloginpage.login (C:\Users\madhu\Documents\webdriverio\test\pageobjects\swaglabsloginpage.ts:22:11)
+                    at Context.&lt;anonymous> (C:\Users\madhu\Documents\webdriverio\test\specs\swaglabstest.ts:7:7)
+                    at Context.executeAsync (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\shim.js:265:16)
+                    at Context.testFrameworkFnWrapper (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1628457325129' status='passed' stop='1628457325132'>
+            <name>Sort the products by Price high to low</name>
+            <title>Sort the products by Price high to low</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628457325133' status='passed' stop='1628457325135'>
+            <name>Add the two cheapest products to your basket </name>
+            <title>Add the two cheapest products to your basket </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
