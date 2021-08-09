@@ -50,6 +50,10 @@ class inventorypage extends Page{
       
         await this.shoppingcart.click();
         browser.pause(5000);
+        
+    }
+
+    async  removeLowestPriceAndCheckout(){
         var value1 = await this.invPrice1.getText();
         var value2 = await this.invPrice2.getText();
         console.log(value1);

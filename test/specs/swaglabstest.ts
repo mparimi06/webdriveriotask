@@ -14,8 +14,12 @@ describe('SwagLabs Demo Application', () => {
       await inventorypage.sortProducts();
     });
 
-    it('Add the two cheapest products to your basket ', async () => {
+    it('Add the two cheapest products to your basket and open cart', async () => {
        await inventorypage.addproductsToCart();
     });
+
+    it('Remove the cheapest product from your basket and Checkout ', async () => {
+      await inventorypage.removeLowestPriceAndCheckout();
+   });
     
 });

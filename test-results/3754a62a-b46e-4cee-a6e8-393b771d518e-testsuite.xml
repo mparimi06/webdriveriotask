@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628470918503' stop='1628470921102'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628512838714' stop='1628512841537'>
     <name>SwagLabs Demo Application</name>
     <title>SwagLabs Demo Application</title>
     <test-cases>
-        <test-case start='1628470918504' status='passed' stop='1628470920886'>
+        <test-case start='1628512838714' status='passed' stop='1628512840549'>
             <name>login successful with standard user</name>
             <title>login successful with standard user</title>
             <labels>
@@ -17,7 +17,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1628470920888' status='passed' stop='1628470920905'>
+        <test-case start='1628512840550' status='passed' stop='1628512840845'>
             <name>Sort the products by Price high to low</name>
             <title>Sort the products by Price high to low</title>
             <labels>
@@ -31,9 +31,23 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1628470920910' status='passed' stop='1628470920992'>
-            <name>Add the two cheapest products to your basket </name>
-            <title>Add the two cheapest products to your basket </title>
+        <test-case start='1628512840846' status='passed' stop='1628512841174'>
+            <name>Add the two cheapest products to your basket and open cart</name>
+            <title>Add the two cheapest products to your basket and open cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628512841174' status='passed' stop='1628512841535'>
+            <name>Remove the cheapest product from your basket and Checkout </name>
+            <title>Remove the cheapest product from your basket and Checkout </title>
             <labels>
                 <label name='language' value='javascript'/>
                 <label name='framework' value='wdio'/>
