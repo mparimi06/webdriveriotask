@@ -44,8 +44,8 @@ class inventorypage extends Page{
     
         await $('(.//div[@class="inventory_item_price"]/../button)['+count+']').click();
     
-        browser.pause(5000);
-        // await results[count-1].value.ELEMENT.click();
+        browser.pause(2000);
+       
         await $('(.//div[@class="inventory_item_price"]/../button)['+(count-1)+']').click();
       
         await this.shoppingcart.click();
