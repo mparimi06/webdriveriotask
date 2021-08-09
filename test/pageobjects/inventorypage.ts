@@ -10,7 +10,7 @@ class inventorypage extends Page{
     async open () {
         await super.open('')
        }
-    async sortProducts(sortOrderValue: String){
+    async sortProducts1(sortOrderValue: String){
         // await this.inventoryItem.click();
         browser.pause(5000);
         await this.productsortSelect.selectByVisibleText('Price (high to low)');
@@ -23,9 +23,9 @@ class inventorypage extends Page{
         assert(await this.inventoryItem.isExisting(),"Inventory Items not found");
 
     }
-    async addproductsToCart(){
+    async addproductsToCart1(){
          const elements= $$('.//div[@class="inventory_item_price"]/../button');
-         var  numberofProducts=elements.size()
+       
         await elements[numberofProducts-1].click();
         await elements[numberofProducts].click();
         this.inventoryItem.click();
