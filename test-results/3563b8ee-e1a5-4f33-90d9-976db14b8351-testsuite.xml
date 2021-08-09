@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628508990717' stop='1628508994827'>
+    <name>SwagLabs Demo Application</name>
+    <title>SwagLabs Demo Application</title>
+    <test-cases>
+        <test-case start='1628508990719' status='passed' stop='1628508994132'>
+            <name>login successful with standard user</name>
+            <title>login successful with standard user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628508994134' status='passed' stop='1628508994747'>
+            <name>Sort the products by Price high to low</name>
+            <title>Sort the products by Price high to low</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628508994748' status='broken' stop='1628508994824'>
+            <name>Add the two cheapest products to your basket </name>
+            <title>Add the two cheapest products to your basket </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>results.then is not a function</message>
+                <stack-trace>TypeError: results.then is not a function
+                    at inventorypage.addproductsToCart (C:\Users\madhu\Documents\webdriverio\test\pageobjects\inventorypage.ts:41:37)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at Context.&lt;anonymous> (C:\Users\madhu\Documents\webdriverio\test\specs\swaglabstest.ts:18:8)
+                    at Context.executeAsync (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\shim.js:265:16)
+                    at Context.testFrameworkFnWrapper (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

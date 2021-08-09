@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628494769943' stop='1628494783305'>
+    <name>SwagLabs Demo Application</name>
+    <title>SwagLabs Demo Application</title>
+    <test-cases>
+        <test-case start='1628494769944' status='passed' stop='1628494772108'>
+            <name>login successful with standard user</name>
+            <title>login successful with standard user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628494772111' status='passed' stop='1628494772449'>
+            <name>Sort the products by Price high to low</name>
+            <title>Sort the products by Price high to low</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628494772450' status='broken' stop='1628494783300'>
+            <name>Add the two cheapest products to your basket </name>
+            <title>Add the two cheapest products to your basket </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'ELEMENT' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'ELEMENT' of undefined
+                    at swaglabsloginpage.addproductsToCart (C:\Users\madhu\Documents\webdriverio\test\pageobjects\swaglabsloginpage.ts:65:71)
+                    at Context.&lt;anonymous> (C:\Users\madhu\Documents\webdriverio\test\specs\swaglabstest.ts:18:31)
+                    at Context.executeAsync (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\shim.js:265:25)
+                    at Context.testFrameworkFnWrapper (C:\Users\madhu\Documents\webdriverio\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -19,6 +19,9 @@ class swaglabsloginpage extends Page{
        * a method to encapsule automation code to interact with the page
        * e.g. to login using username and password
        */
+       constructor() {
+        super();
+      }
        async open () {
         await super.open('')
        }
@@ -34,47 +37,9 @@ class swaglabsloginpage extends Page{
                 timeout: 5000
             });
           assert(await this.productsortSelect.isExisting(),"Login not successful")
-        
-      }
 
-      async sortProducts(){
-        browser.pause(5000);
-        // await this.productsortSelect.selectByVisibleText('Price (high to low)');
-        await this.productsortSelect.click();
-        $('.//option[text()="Price (high to low)"]').click();
-       
-        await browser.waitUntil(
-            async () => (await this.inventoryItem.isExisting()),
-            {
-                timeout: 5000
-            });
-        assert(await this.inventoryItem.isExisting(),"Inventory Items not found");
-
-    }
-    async addproductsToCart(){
-        //  const elements= browser.$$('button.btn_inventory');
-        var count=0;
-         var results = browser.$$('button.btn_inventory').forEach(element => {
-          console.info("Number of products: "+count); 
-          count=count+1;
-          });
         
-         console.info("Number of products: ");
-        //  var  numberofProducts=results
-         console.info("Number of products: "+count);
-        
-        // await browser.elementIdClick(elements.value[numberofProducts-1].ELEMENT);
-        // await browser.elementIdClick(elements.value[numberofProducts-2].ELEMENT);
-        var element = browser.$$('button.btn_inventory')[count];
-        element.click();
-        browser.pause(5000);
-        element = browser.$$('button.btn_inventory')[count-1];
-        element.click();
-        browser.pause(5000);
-      //  this.inventoryItem.click();
-        browser.moveTo(this.shoppingcart,0,0);
-        await this.shoppingcart.click();
-        browser.pause(5000);
-    }
+      }      
+    
 }
 export default new swaglabsloginpage();

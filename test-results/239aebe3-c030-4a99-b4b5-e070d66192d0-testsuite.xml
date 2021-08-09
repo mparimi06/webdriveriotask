@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628500255602' stop='1628500350966'>
+    <name>SwagLabs Demo Application</name>
+    <title>SwagLabs Demo Application</title>
+    <test-cases>
+        <test-case start='1628500255604' status='passed' stop='1628500257427'>
+            <name>login successful with standard user</name>
+            <title>login successful with standard user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628500257430' status='passed' stop='1628500257854'>
+            <name>Sort the products by Price high to low</name>
+            <title>Sort the products by Price high to low</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628500257855' status='broken' stop='1628500350955'>
+            <name>Add the two cheapest products to your basket </name>
+            <title>Add the two cheapest products to your basket </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 90000ms exceeded. The execution in the test "SwagLabs Demo Application Add the two cheapest products to your basket " took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\madhu\Documents\webdriverio\test\specs\swaglabstest.ts)</message>
+                <stack-trace>Error: Timeout of 90000ms exceeded. The execution in the test "SwagLabs Demo Application Add the two cheapest products to your basket " took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\madhu\Documents\webdriverio\test\specs\swaglabstest.ts)
+                    at createTimeoutError (C:\Users\madhu\Documents\webdriverio\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Users\madhu\Documents\webdriverio\node_modules\mocha\lib\runnable.js:431:10)
+                    at done (C:\Users\madhu\Documents\webdriverio\node_modules\mocha\lib\runnable.js:308:18)
+                    at C:\Users\madhu\Documents\webdriverio\node_modules\mocha\lib\runnable.js:371:11</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

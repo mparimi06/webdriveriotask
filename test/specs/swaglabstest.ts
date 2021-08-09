@@ -7,14 +7,15 @@ describe('SwagLabs Demo Application', () => {
       await swaglabsloginpage.open("https://www.saucedemo.com");
       browser.maximizeWindow();
       await swaglabsloginpage.login('standard_user', 'secret_sauce');
+      
     });
-    
+
     it('Sort the products by Price high to low', async () => {
-      swaglabsloginpage.sortProducts();
+      await inventorypage.sortProducts();
     });
 
     it('Add the two cheapest products to your basket ', async () => {
-      swaglabsloginpage.addproductsToCart();
-  });
+       await inventorypage.addproductsToCart();
+    });
     
 });

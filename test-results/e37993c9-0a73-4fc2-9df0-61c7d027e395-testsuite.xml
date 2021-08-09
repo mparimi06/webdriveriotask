@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1628508769943' stop='1628508773465'>
+    <name>SwagLabs Demo Application</name>
+    <title>SwagLabs Demo Application</title>
+    <test-cases>
+        <test-case start='1628508769944' status='passed' stop='1628508772803'>
+            <name>login successful with standard user</name>
+            <title>login successful with standard user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628508772804' status='passed' stop='1628508773315'>
+            <name>Sort the products by Price high to low</name>
+            <title>Sort the products by Price high to low</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1628508773317' status='broken' stop='1628508773434'>
+            <name>Add the two cheapest products to your basket </name>
+            <title>Add the two cheapest products to your basket </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.131'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>ele.isVisible is not a function</message>
+                <stack-trace>TypeError: ele.isVisible is not a function
+                    at Object.&lt;anonymous> (C:\Users\madhu\Documents\webdriverio\test\pageobjects\inventorypage.ts:39:24)
+                    at C:\Users\madhu\Documents\webdriverio\node_modules\p-iteration\lib\static-methods.js:300:27
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at C:\Users\madhu\Documents\webdriverio\node_modules\p-iteration\lib\static-methods.js:306:11</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
